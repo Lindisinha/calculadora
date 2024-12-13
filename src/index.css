@@ -1,0 +1,96 @@
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #821131;  
+  font-family: 'Comic Sans MS', cursive, sans-serif; /* Fonte divertida */
+}
+
+.calculator {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  width: 400px;  
+}
+
+.display {
+  margin-bottom: 20px;
+}
+
+input {
+  width: 90%;
+  padding: 20px;
+  font-size: 32px;
+  text-align: right;
+  background-color: #FCF596;
+  border: 2px solid #FCF596;
+  border-radius: 10px;
+  color: #FF4545;
+}
+
+.result {
+  font-size: 28px;
+  color: #d32f2f;
+  text-align: right;
+  margin-top: 10px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+button {
+  padding: 25px;
+  font-size: 28px;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+button:active {
+  transform: scale(1.05); 
+}
+
+.button {
+  background-color: #C7253E;  
+}
+
+.operator {
+  background-color: #FF4545;  
+}
+
+.clear {
+  background-color: #E85C0D;  
+}
+
+.equals {
+  background-color: #FABC3F;  
+}
+
+@media (max-width: 480px) {
+  .calculator {
+    width: 90%;
+    padding: 20px;
+  }
+  
+  input {
+    font-size: 24px;
+    padding: 15px;
+  }
+
+  button {
+    font-size: 22px;
+    padding: 20px;
+  }
+}
